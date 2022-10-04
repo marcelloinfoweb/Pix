@@ -13,6 +13,16 @@
         <label data-bind="attr: {'for': getCode()}" class="label"><span data-bind="text: getTitle()"></span></label>
     </div>
     <div class="payment-method-content">
+        <div id="mensagem-pix">
+            <div data-role="checkout-messages" class="messages" style="display: block;">
+                <div class="message message-warning warning">
+                    <div data-ui-id="checkout-cart-validationmessages-message-warning">
+                        O pagamento será no ato da entrega, por meio do QR Code.
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
         <!-- ko foreach: getRegion('messages') -->
         <!-- ko template: getTemplate() --><!-- /ko -->
         <!--/ko-->
@@ -21,10 +31,10 @@
             <!-- ko template: getTemplate() --><!-- /ko -->
             <!--/ko-->
         </div>
-<!--        <p data-bind="html: getInstructions()"></p>-->
+        <!--        <p data-bind="html: getInstructions()"></p>-->
         <div class="checkout-agreements-block">
             <!-- ko foreach: $parent.getRegion('before-place-order') -->
-                <!-- ko template: getTemplate() --><!-- /ko -->
+            <!-- ko template: getTemplate() --><!-- /ko -->
             <!--/ko-->
         </div>
         <div class="actions-toolbar">
