@@ -3,7 +3,7 @@
 	<system>
 		<section id="payment" sortOrder="1000" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
 			<group id="pix" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
-				<label>Pix</label>
+				<label>Funarbe | Pix</label>
 				<field id="active" type="select" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
 					<label>Enabled</label>
 					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
@@ -26,9 +26,6 @@
 				</field>
 				<field id="sort_order" type="text" sortOrder="60" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
 					<label>Sort Order</label>
-				</field>
-				<field id="instructions" type="textarea" sortOrder="70" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
-					<label>Instructions</label>
 				</field>
 			</group>
 		</section>
